@@ -27,12 +27,8 @@ const msgGenerator = {
 };
 
 
-/*To generate random inspirational message
-const msgs = msg[Math.floor(Math.random() * msg.length)];
+//To generate random quirky message
+msgGenerator.greeting();
+msgGenerator.randomMsg();
 
-//Function to ouptut mixed message to user
-const msgGenerator = () => {
-    console.log(msgs);
-};
-
-window.alert('There is something to ponder. Have a great day!');*/
+window.alert('Now there is something for you to ponder. Have a great day!');
