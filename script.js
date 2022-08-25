@@ -14,7 +14,10 @@ const msgGenerator = {
   noun: ['creation!','phenomenon!','enigma!','catastrophe!','concept!','conundrum!','fabrication!','spectacle!'],
   randStarter () {
     return this.starter[Math.floor(Math.random() * this.starter.length)];
-  }
+  },
+  randAdjective () {
+    return this.adjective[Math.floor(Math.random() * this.adjective.length)];
+  },
 };
 
 
