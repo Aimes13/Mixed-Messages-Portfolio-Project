@@ -18,6 +18,9 @@ const msgGenerator = {
   randAdjective () {
     return this.adjective[Math.floor(Math.random() * this.adjective.length)];
   },
+  randNoun () {
+    return this.noun[Math.floor(Math.random() * this.noun.length)];
+  }
 };
 
 
