@@ -10,7 +10,7 @@ const msgGenerator = {
     } 
   },
   starter: ['You are a ','Time is a ','Life is a ','Love is a ', 'Humanity is a ','Animals are a ','To be alive is a ','Nature is a '],
-  adjective: ['most amazing ','most miraculous ','most tragic ','most demented ','most charming ','most mind-boggling ','most volatile ','most breath-taking '],
+  adjective: ['most amazing ','most miraculous ','most tragic ','most demented ','most charming ','most mind-boggling ','most revolting ','most breath-taking '],
   noun: ['creation!','phenomenon!','enigma!','catastrophe!','concept!','conundrum!','fabrication!','spectacle!'],
   randStarter () {
     return this.starter[Math.floor(Math.random() * this.starter.length)];
@@ -20,6 +20,9 @@ const msgGenerator = {
   },
   randNoun () {
     return this.noun[Math.floor(Math.random() * this.noun.length)];
+  },
+  randomMsg () {
+    return `${this.randStarter()}${this.randAdjective()}${this.randNoun()}`;
   }
 };
 
