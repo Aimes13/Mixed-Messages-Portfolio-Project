@@ -56,12 +56,37 @@ p {
     font-family: 'Gentium Plus';
     font-size: 1.2rem;
     letter-spacing: 0.1rem;
+    text-align: center;
 }
 
 /* Header Style */
 h1 {
     font-family: 'Shadows Into Light Two';
+    font-size: 3rem;
     text-align: center;
 }
 
 /*Main Style */
+#intro-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin: 1rem;
+    width: 60%;
+    border: 1px solid red;   
+}
+
+#highWord {
+    font-family: 'Cabin Sketch';
+    font-size: 1.8rem;
+    color: blueviolet;
+}
+
+#lowWord {
+    font-family: 'Rubik Iso';
+    font-size: 1.8rem;
+    color: gray;
+}
+
+/*Message Section */
