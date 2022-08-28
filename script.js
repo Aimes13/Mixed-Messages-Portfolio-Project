@@ -26,7 +26,6 @@ const msgGenerator = {
   }
 };
 
-
 //To generate random quirky message
 msgGenerator.greeting();
 msgGenerator.randomMsg();
@@ -34,16 +33,5 @@ msgGenerator.randomMsg();
 const displayGenerator = () => {
   console.log(msgGenerator.randomMsg());
 };
-
-const randomMsgDisplay = document.getElementById('genRandomMsg');
-const randomImgDisplay = document.getElementById('genRandomImg');
-const pressButton = document.getElementById('button');
-
-pressButton.addEventListener('click', () => {
-  //Generate a random message
-  showMsg = displayGenerator();
-  // Display the new round number
-  randomMsgDisplay.innerText = showMsg;
-});
 
 /* window.alert('Now there is something for you to ponder. Have a great day!'); */
