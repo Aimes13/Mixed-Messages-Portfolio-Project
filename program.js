@@ -1,25 +1,36 @@
-let showMsg;
-
 const randomMsgDisplay = document.getElementById('genRandomMsg');
 const randomImgDisplay = document.getElementById('genRandomImg');
-const goodImgDisplay = document.getElementById('goodImg');
-const badImgDisplay = document.getElementById('badImg');
+let goodImgDisplay = document.getElementById('goodImg');
+let badImgDisplay = document.getElementById('badImg');
 const pressButton = document.getElementById('button');
 
 pressButton.addEventListener('click', () => {
     //Display the random message
-    //randomMsgDisplay.innerText = msgGenerator.randomMsg();
+    const reveal = msgGenerator.randomMsg();
 
-    //Display the random image
-    if((msgGenerator.randomMsg()).includes('amazing') || (msgGenerator.randomMsg()).includes('miraculous') || (msgGenerator.randomMsg()).includes('charming') || (msgGenerator.randomMsg()).includes('breath-taking')) {
-        randomMsgDisplay.innerText = msgGenerator.randomMsg();
-        randomImgDisplay.innerText = goodImgDisplay;
+    //To check for positive/negative messages and load positive/negative image
+    if(reveal.includes('amazing') || reveal.includes('charming') || reveal.includes('miraculous') || reveal.includes('breath-taking')) {
+        randomMsgDisplay.innerText = reveal;
+        randomImgDisplay.innerText = 'good';
+        
+        if (randomImgDisplay.innerText = 'good') {
+            randomImgDisplay.innerText = (goodImgDisplay.style.display ='block');
+            badImgDisplay.style.display ='none';
+        }
     }
-    else {
-        randomMsgDisplay.innerText = msgGenerator.randomMsg();
-        randomImgDisplay.innerText = badImgDisplay;
-    }; 
 
+    else {
+        randomMsgDisplay.innerText = reveal;
+        randomImgDisplay.innerText = 'bad';
+
+        if (randomImgDisplay.innerText = 'bad') {
+            randomImgDisplay.innerText = (badImgDisplay.style.display ='block');
+            goodImgDisplay.style.display ='none';    
+        }
+    };
+
+    return randomImgDisplay.innerText;
+    
     //Set the correct disabled state for the button
     pressButton.removeAttribute('disabled');
 });
