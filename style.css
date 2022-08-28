@@ -128,27 +128,18 @@ h1 {
 #button {
     border-radius: 50%;
     border: 3px solid purple;
-    background-color: magenta;
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLwOFUP56jJ613L-UYoF2QGk2M7dzms21ggw&usqp=CAU");
     background-size: cover;
-    color: black;
-    font-family: 'Special Elite';
-    font-size: 1.5rem;
-    text-align: center;
-    padding: 1rem;
     height: 7.5rem;
-    width: 7.5rem; 
+    width: 7.5rem;
 }
 
 #button:hover {
     border: 6px solid goldenrod;
-    background-color: black;
-    color: magenta;
-    font-size: 1.8rem;
     height: 8.5rem;
     width: 8.5rem;
     cursor: pointer;
-  }
+}
 
 /* Banner Style */
 #banner-box, #footer-box {
