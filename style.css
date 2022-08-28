@@ -105,6 +105,10 @@ h1 {
 }
 
 /*Message Section Style */
+#randomImg img {
+    display: none;
+}
+
 #msg {
     flex-direction: column;
     margin-bottom: 2rem;
