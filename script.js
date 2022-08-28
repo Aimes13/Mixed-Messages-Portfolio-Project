@@ -1,16 +1,7 @@
 // To define object
 const msgGenerator = {
-  greeting (name) {
-    switch(name) {
-      case undefined : 
-        console.log('Hello Stranger, here are some words of inspiration for you:'); 
-      break;
-      default : 
-        console.log(`Hello ${name}, here are some words of inspiration for you:`);
-    } 
-  },
-  starter: ['You are a ','Time is a ','Life is a ','Love is a ', 'Humanity is a ','Animals are a ','To be alive is a ','Nature is a '],
-  adjective: ['most amazing ','most miraculous ','most tragic ','most demented ','most charming ','most mind-boggling ','most revolting ','most breath-taking '],
+  starter: ['You are ','Time is ','Life is ','Love is ', 'Humanity is ','Animals are ','To be alive is ','Nature is '],
+  adjective: ['a most amazing ','such a miraculous ','a most tragic ','such a demented ','quite the charming ','quite the mind-boggling ','an absolutely revolting ','an absolutely breath-taking '],
   noun: ['creation!','phenomenon!','enigma!','catastrophe!','concept!','conundrum!','fabrication!','spectacle!'],
   randStarter () {
     return this.starter[Math.floor(Math.random() * this.starter.length)];
@@ -22,12 +13,11 @@ const msgGenerator = {
     return this.noun[Math.floor(Math.random() * this.noun.length)];
   },
   randomMsg () {
-    return `${this.randStarter()}${this.randAdjective()}${this.randNoun()}`;
+    return `"${this.randStarter()}${this.randAdjective()}${this.randNoun()}"`;
   }
 };
 
 //To generate random quirky message
-msgGenerator.greeting();
 msgGenerator.randomMsg();
 
 const displayGenerator = () => {
