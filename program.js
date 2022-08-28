@@ -5,12 +5,9 @@ const randomImgDisplay = document.getElementById('genRandomImg');
 const pressButton = document.getElementById('button');
 
 pressButton.addEventListener('click', () => {
-    //Generate a random message
-    showMsg = displayGenerator();
-
-    //Display the new round number
-    randomMsgDisplay.innerText = showMsg;
+    //Display the random message
+    randomMsgDisplay.innerText = msgGenerator.randomMsg();
 
     //Set the correct disabled state for the buttons
-    pressButton.setAttribute('disabled', true);
+    pressButton.removeAttribute('disabled');
 });
