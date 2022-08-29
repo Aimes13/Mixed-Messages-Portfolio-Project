@@ -67,10 +67,6 @@ p {
         font-size: 0.9rem;
     };
 }
-  
-@media only screen and (max-width: 450px) {
-
-}
 
 /* Header Style */
 #title {
@@ -94,8 +90,10 @@ h1 {
     }
 }
   
-@media only screen and (max-width: 500px) {
-
+@media only screen and (max-width: 300px) {
+    h1 {
+        font-size: 1.8rem;
+    }
 }
 
 /*Main Style */
@@ -245,9 +243,31 @@ h1 {
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 450px) {
     #msg-box {
         width: 80%;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    #button {
+        height: 5rem;
+        width: 5rem;
+        border: 9px double purple;
+    }
+
+    #randomMsg p {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    #msg-box {
+        width: 90%;
+    }
+
+    #randomMsg p {
+        font-size: 1.5rem;
     }
 }
 
@@ -266,10 +286,6 @@ h1 {
     font-family: 'Cabin Sketch';
 }
 
-@media only screen and (max-width: 500px) {
-
-}
-
 /* Footer Style */
 #footer-box {
     height: 2rem;
@@ -279,8 +295,4 @@ h1 {
 
 #footer-box p {
     font-size: 0.8rem;
-}
-  
-@media only screen and (max-width: 500px) {
-
 }
