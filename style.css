@@ -68,7 +68,7 @@ p {
     };
 }
   
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 450px) {
 
 }
 
@@ -129,7 +129,9 @@ h1 {
 }
   
 @media only screen and (max-width: 500px) {
-
+    #highWord, #lowWord {
+        font-size: 1.3rem;
+    }
 }
 
 /*Message Section Style */
@@ -238,7 +240,15 @@ h1 {
 }
   
 @media only screen and (max-width: 500px) {
+    #randomMsg p {
+        font-size: 2.3rem;
+    }
+}
 
+@media only screen and (max-width: 500px) {
+    #msg-box {
+        width: 80%;
+    }
 }
 
 /* Banner Style */
