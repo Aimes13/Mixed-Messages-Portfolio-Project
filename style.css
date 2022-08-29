@@ -52,8 +52,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0.2rem;
-    margin: 0.5rem;
 }
 
 p {
@@ -66,18 +64,32 @@ p {
 
 /* Header Style */
 #title {
-    width: 60%;
-    margin: 0;
+    width: 100%;
+    margin-bottom: 1rem;
     background-color: goldenrod;
     border: 6px double black;
 }
 
 h1 {
-    font-family: 'Shadows Into Light Two';
-    font-size: 3rem;
+    font-family: 'Cabin Sketch';
+    font-size: 3.3rem;
     letter-spacing: 0.3rem;
     text-align: center;
-    color: aliceblue;
+    color: navy;
+}
+
+@media only screen and (max-width: 760px) {
+    p {
+        font-size: 0.9rem;
+    };
+}
+  
+@media only screen and (max-width: 600px) {
+
+}
+  
+@media only screen and (max-width: 500px) {
+
 }
 
 /*Main Style */
@@ -88,9 +100,14 @@ h1 {
     padding: 0.5rem;
     margin: 0.5rem;
     width: 60%;
-    background-color: cornflowerblue;
+    background-color: lightseagreen;
     border: 6px double black;
-    border-radius: 20px;   
+}
+
+#intro-box {
+    background-color: midnightblue;
+    border: 6px double cornflowerblue;
+    width: 90%;
 }
 
 #highWord {
@@ -102,7 +119,15 @@ h1 {
 #lowWord {
     font-family: 'Rubik Iso';
     font-size: 1.8rem;
-    color: black;
+    color: turquoise;
+}
+  
+@media only screen and (max-width: 600px) {
+
+}
+  
+@media only screen and (max-width: 500px) {
+
 }
 
 /*Message Section Style */
@@ -169,18 +194,74 @@ h1 {
     background-color: grey;
 }
 
+@media only screen and (max-width: 760px) {
+    #msg-box {
+        width: 70%;
+    }
+
+    #randomMsg p {
+        font-size: 2rem;
+    }
+
+    #randomImg {
+        width: 40%;
+    }
+
+    #randomImg img {
+        max-height: 12rem;
+    }
+
+    #randomMsg, #randomImg {
+        max-height: 12rem;
+    }
+}
+  
+@media only screen and (max-width: 600px) {
+
+}
+  
+@media only screen and (max-width: 500px) {
+
+}
+
 /* Banner Style */
 #banner-box, #footer-box {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0.5rem;
-    padding: 0 0.5rem;
-    background-color: cornflowerblue;
-    border: 6px double black;   
+    width: 100%;
+    height: 6rem;
+    background-color: midnightblue;
+    border: 6px double cornflowerblue;   
+}
+
+#banner-box p {
+    font-family: 'Cabin Sketch';
+}
+
+@media only screen and (max-width: 600px) {
+
+}
+  
+@media only screen and (max-width: 500px) {
+
 }
 
 /* Footer Style */
+#footer-box {
+    height: 2rem;
+    background-color: black;
+    border: none;
+}
+
 #footer-box p {
     font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 600px) {
+
+}
+  
+@media only screen and (max-width: 500px) {
+
 }
