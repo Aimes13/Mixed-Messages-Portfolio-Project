@@ -1,4 +1,5 @@
 const randomMsgDisplay = document.getElementById('genRandomMsg');
+const alertDisplay = document.getElementById('alertMsg');
 const randomImgDisplay = document.getElementById('genRandomImg');
 let goodImgDisplay = document.getElementById('goodImg');
 let badImgDisplay = document.getElementById('badImg');
@@ -11,6 +12,7 @@ pressButton.addEventListener('click', () => {
     //To check for positive/negative messages and load positive/negative image
     if(reveal.includes('amazing') || reveal.includes('charming') || reveal.includes('miraculous') || reveal.includes('breath-taking')) {
         randomMsgDisplay.innerText = reveal;
+        alertDisplay.innerText = 'Click the pink button again for a new message!';
         randomImgDisplay.innerText = 'good';
         
         if (randomImgDisplay.innerText = 'good') {
@@ -21,6 +23,7 @@ pressButton.addEventListener('click', () => {
 
     else {
         randomMsgDisplay.innerText = reveal;
+        alertDisplay.innerText = 'Click the pink button again for a new message!';
         randomImgDisplay.innerText = 'bad';
 
         if (randomImgDisplay.innerText = 'bad') {

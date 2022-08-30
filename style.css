@@ -133,6 +133,12 @@ h1 {
 }
 
 /*Message Section Style */
+#msgContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #randomMsg p {
     font-family: 'Special Elite';
     font-size: 3.5rem;
@@ -150,7 +156,7 @@ h1 {
     color: cornflowerblue;
 }
 
-#goodImg, #badImg {
+#goodImg {
     border: 3px solid white;
 }
 
@@ -161,7 +167,13 @@ h1 {
 
 #msg-box {
     border: 6px double black;
-    border-radius: 20px;   
+    border-radius: 20px;
+    flex-direction: column;   
+}
+
+#alertMsg {
+    color: lightgoldenrodyellow;
+    background-color: deeppink;
 }
 
 #randomMsg, #randomImg, #button {
@@ -219,7 +231,7 @@ h1 {
 }
   
 @media only screen and (max-width: 600px) {
-    #msg-box {
+    #msgContainer {
         flex-direction: column;
     }
     
