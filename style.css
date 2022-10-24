@@ -62,6 +62,7 @@ p {
     color: azure;
 }
 
+/* Tablet */
 @media only screen and (max-width: 760px) {
     p {
         font-size: 0.9rem;
@@ -84,12 +85,14 @@ h1 {
     color: navy;
 }
 
+/* Tablet */
 @media only screen and (max-width: 600px) {
     h1 {
         font-size: 2.5rem;
     }
 }
-  
+
+/* Mobile */
 @media only screen and (max-width: 300px) {
     h1 {
         font-size: 1.8rem;
@@ -125,7 +128,8 @@ h1 {
     font-size: 1.8rem;
     color: turquoise;
 }
-  
+
+/* Tablet */
 @media only screen and (max-width: 500px) {
     #highWord, #lowWord {
         font-size: 1.3rem;
@@ -137,12 +141,19 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 90%;
 }
 
 #randomMsg p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     font-family: 'Special Elite';
     font-size: 3.5rem;
     letter-spacing: 0.4rem;
+    padding: 0 0.5rem;
+    max-width: 90%;
 }
 
 #randomImg img {
@@ -153,6 +164,7 @@ h1 {
 
 #randomImg p {
     font-size: 0.1rem;
+    padding: 0 0.5rem;
     color: cornflowerblue;
 }
 
@@ -208,6 +220,7 @@ h1 {
     background-color: grey;
 }
 
+/* Tablet */
 @media only screen and (max-width: 760px) {
     #msg-box {
         width: 70%;
@@ -251,13 +264,24 @@ h1 {
   
 @media only screen and (max-width: 500px) {
     #randomMsg p {
-        font-size: 2.3rem;
+        font-size: 2.1rem;
     }
 }
 
+/* Mobile */
 @media only screen and (max-width: 450px) {
     #msg-box {
         width: 80%;
+    }
+
+    #randomMsg p {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #randomMsg p {
+        font-size: 1.9rem;
     }
 }
 
@@ -269,17 +293,23 @@ h1 {
     }
 
     #randomMsg p {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
     }
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 340px) {
+    #randomMsg p {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 320px) {
     #msg-box {
         width: 90%;
     }
 
     #randomMsg p {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 }
 
